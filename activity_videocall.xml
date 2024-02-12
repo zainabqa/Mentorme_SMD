@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screencolor"
+
+    tools:context=".Photo">
+
+    <ImageView
+        android:id="@+id/photorecinvideocall"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+
+
+        app:srcCompat="@drawable/photo_rectangle" />
+
+    <ImageView
+        android:id="@+id/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/_0_08" />
+
+    <ImageView
+        android:id="@+id/callerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="380dp"
+        app:srcCompat="@drawable/rectangle_39" />
+
+    <ImageView
+        android:id="@+id/rectangle38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/rectangle_38" />
+
+    <ImageView
+        android:id="@+id/micoffbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+
+        app:srcCompat="@drawable/group_279210__1_" />
+
+    <ImageView
+        android:id="@+id/micoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="67dp"
+
+        app:srcCompat="@drawable/mic_off" />
+
+    <ImageView
+        android:id="@+id/videooffbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="55dp"
+
+        app:srcCompat="@drawable/group_279210__1_" />
+
+    <ImageView
+        android:id="@+id/videooff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="67dp"
+
+        app:srcCompat="@drawable/videocam_off" />
+
+    <ImageView
+        android:id="@+id/twoarrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="55dp"
+
+        app:srcCompat="@drawable/group_3__3_" />
+
+    <ImageView
+        android:id="@+id/endcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photorecinvideocall"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="55dp"
+
+        app:srcCompat="@drawable/group_279212" />
+
+
+
+</RelativeLayout>
