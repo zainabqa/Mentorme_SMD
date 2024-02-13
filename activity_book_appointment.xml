@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3EFF6"
+    tools:context=".BookAppointment">
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/cart"
+        android:layout_height="265dp"
+        android:background="@drawable/rounded_bottoms"/>
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/arrow_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onArrowClick"/>
+
+    <TextView
+        android:id="@+id/textViewExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="48dp"
+        android:text="Book your Session"
+        android:textColor="@color/darkGreen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="110dp"
+        android:text="John Cooper"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="91dp"
+        android:src="@drawable/ellipse_12" />
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="70dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/image_5" />
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="21dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/star" />
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:text="4.9"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="176.5dp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/view1"
+        android:layout_below="@+id/rating"
+        android:layout_height="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:layout_below="@+id/view1"
+        android:background="@android:color/white"
+        android:alpha="0.3"/>
+    <TextView
+        android:id="@+id/dollors"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1500/Session"
+        android:textColor="@color/yell"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10.5dp"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/group_158" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/group_159" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/group_157" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/line3"
+        android:layout_height="10dp"
+        android:layout_below="@+id/dollors"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calender"
+        android:layout_below="@+id/line3"
+        android:background="#B3EFF6">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texts"
+        android:layout_below="@+id/calender">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/txt"
+            android:text="Available Time Slots"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/txt"
+            android:src="@drawable/frame_168"
+            android:id="@+id/frame"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:id="@+id/veww"
+            android:layout_below="@id/frame"/>
+
+        <Button
+            android:id="@+id/bookingbtn"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/veww"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_btn_verify"
+            android:text="Book an Appointment"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#157177" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

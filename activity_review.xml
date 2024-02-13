@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3EFF6"
+    tools:context=".Review">
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/cart"
+        android:layout_height="260dp"
+        android:background="@drawable/rounded_bottoms"/>
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/arrow_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onArrowClick"/>
+    <TextView
+        android:id="@+id/textname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="75dp"
+        android:text="Hi, I'm"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="130dp"
+        android:text="John Cooper"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/ellipse_12" />
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/image_5" />
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/view1"
+        android:layout_below="@+id/textname"
+        android:layout_height="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:layout_below="@+id/view1"
+        android:background="@android:color/white"
+        android:alpha="0.3"/>
+    <TextView
+        android:id="@+id/textname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/line"
+        android:text="Drop me a Review"
+        android:textColor="@color/bg"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_reaction"/>
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/view2"/>
+
+        <EditText
+            android:id="@+id/reviewbox"
+            android:layout_width="310dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/view2"
+            android:layout_marginStart="23dp"
+            android:background="@drawable/rounded_borders"
+            android:hint="Type your experience..."
+            android:padding="8dp"
+            android:textColorHint="#808080"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="80dp"
+                android:background="@drawable/star_border" />
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="41dp"
+                android:background="@drawable/star_border"/>
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="41dp"
+                android:background="@drawable/star_border"/>
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="41dp"
+                android:background="@drawable/star_border"/>
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="41dp"
+                android:background="@drawable/star_border"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/bookingbtn"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edit_btn_verify"
+            android:text="Submit Feedback"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#157177" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/iceBlue"
+    tools:context=".PhoneVerification">
+
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/arrow_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onArrowClick"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrowImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Verify your phone Number"
+        android:textColor="@color/darkGreen"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/middleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-2dp"
+        android:text="We have sent a code to"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/middleTextView"
+        android:text="+92 321 2242022"
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/view1"
+        android:layout_below="@id/numberTextView"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:id="@+id/circlesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/circle1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ellipse_4"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/circle2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ellipse_4"/>
+        <EditText
+            android:id="@+id/circle3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ellipse_4"/>
+        <EditText
+            android:id="@+id/circle4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ellipse_4"/>
+        <EditText
+            android:id="@+id/circle5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ellipse_4"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/Buttonlayout"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circlesLayout">
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/view2"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/verifybtn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view2"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="-7dp"
+            android:background="@drawable/edit_btn_verify"
+            android:text="Verify"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#157177" />
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/view3"
+            android:layout_height="20dp"
+            android:layout_below="@+id/verifybtn"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/sendCodeAgainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Buttonlayout"
+        android:text="Send Code again"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginStart="130dp"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>

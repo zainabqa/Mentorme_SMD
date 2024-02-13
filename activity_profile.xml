@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3EFF6"
+    tools:context=".Profile">
+
+    <View
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:background="@drawable/rounded_bottoms" />
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/arrow_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onArrowClick"/>
+    <TextView
+        android:id="@+id/textname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="75dp"
+        android:text="Hi, I'm"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="130dp"
+        android:text="John Cooper"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/ellipse_12" />
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/image_5" />
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/view1"
+        android:layout_below="@+id/textname"
+        android:layout_height="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:layout_below="@+id/view1"
+        android:background="@android:color/white"
+        android:alpha="0.3"/>
+    <TextView
+        android:id="@+id/textname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/line"
+        android:text="UX Designer at"
+        android:textColor="@color/bg"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/textname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textname3"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Google"
+        android:textColor="@color/bg"
+        android:textSize="22sp"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="21dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/circle"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="41dp"
+        android:text="4.9"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/view2"
+        android:layout_below="@+id/textname4"
+        android:layout_height="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line2"
+        android:layout_height="2dp"
+        android:layout_below="@+id/view2"
+        android:background="@android:color/white"
+        android:alpha="0.3"/>
+    <TextView
+        android:id="@+id/aboutMeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="23dp"
+        android:text="About me"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/bg"/>
+    <TextView
+        android:id="@+id/aboutMeContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/aboutMeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="I am a passionate UX designer at Google with a focus on creating user-centric and intuitive interfaces. With 10 years of experience, I have had the opportunity to work on diverse projects that have shaped my understanding of design principles and user experience."
+        android:textSize="17sp"
+        android:textColor="@color/bg"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart">
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/view5"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/view5"
+            android:layout_marginTop="10dp"
+            android:text="My Expertise Include"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGreen"/>
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/view6"
+            android:layout_below="@+id/exp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/career"
+            android:layout_width="148dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/view6"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/expertise"
+            android:gravity="center"
+            android:text="Career Advice"
+            android:textColor="@color/bg"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/UX"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="190dp"
+            android:text="User Experince Design"
+            android:layout_below="@+id/view6"
+            android:textColor="@color/bg"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/expertise"/>
+        <TextView
+            android:id="@+id/leadership"
+            android:layout_width="121dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Leadership"
+            android:layout_below="@+id/career"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/expertise"/>
+        <TextView
+            android:id="@+id/prototype"
+            android:layout_width="121dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/leadership"
+            android:text="Prototyping"
+            android:layout_below="@+id/career"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/expertise"/>
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/view7"
+            android:layout_below="@+id/leadership"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/reviewbtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view7"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/perfect_rounded"
+
+            android:backgroundTint="@color/mecolor"
+            android:text="Drop a review"
+
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/communityBtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view7"
+            android:layout_marginStart="190dp"
+            android:background="@drawable/perfect_rounded"
+            android:backgroundTint="@color/yell"
+            android:text="Join Community"
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:id="@+id/veww"
+            android:layout_below="@id/communityBtn"/>
+
+        <Button
+            android:id="@+id/bookingbtn"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/veww"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edit_btn_verify"
+            android:text="Book a Session"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#157177" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
